@@ -223,7 +223,7 @@ button { color: inherit; }
   min-height: 150px;
   padding: 0;
   align-items: center;
-  gap: 78px;
+  justify-content: space-between;
   border: 0;
   background: transparent;
   text-align: left;
@@ -237,7 +237,12 @@ button { color: inherit; }
   line-height: 1.2;
 }
 
-.accordion-trigger.workshop-trigger { gap: 138px; }
+.accordion-trigger .chevron {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  stroke-width: 2.5px;
+}
 
 .chevron {
   width: 24px;
@@ -512,6 +517,7 @@ button { color: inherit; }
   .accordion-area { min-height: 420px; padding: 42px 18px 58px; }
   .accordion-trigger { min-height: 105px; gap: 24px; }
   .accordion-trigger h2 { font-size: 24px; }
+  .accordion-trigger .chevron { width: 24px; height: 24px; }
   .workshop-panel { gap: 28px; }
   .workshop-overview h3 { font-size: 20px; }
   .workshop-overview p { font-size: 14px; }
