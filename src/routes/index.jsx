@@ -110,7 +110,9 @@ function Home() {
                       <Detail icon="users">10 platser per tillfälle</Detail>
                       <Detail icon="card">1200 kr per person</Detail>
                     </div>
-                    <img className="workshop-location" src={stockholmImage} alt="Stockholms kaj med stadshus och båtar" />
+                    <div className="workshop-location-frame">
+                      <img className="workshop-location" src={stockholmImage} alt="Stockholms kaj med stadshus och båtar" />
+                    </div>
                   </div>
                 </div>
                 <div className="lessons">

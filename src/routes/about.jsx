@@ -25,6 +25,7 @@ function About() {
             Genom åren har vi rest världen över, fångat ögonblick och utforskat olika sätt att berätta historier
             genom kameran.
           </p>
+          <img className="about-photo about-photo-mobile" src={aboutImage} alt="Körsbärsblommor ramar in berget Fuji" />
           <p>
             Nu vill vi dela med oss av våra kunskaper och inspirera fler att upptäcka glädjen i fotografering.
             Genom våra workshops vill vi skapa en kreativ och avslappnad miljö där du får utvecklas, experimentera
@@ -57,7 +58,7 @@ function About() {
           </form>
         </section>
       </div>
-      <img className="about-photo" src={aboutImage} alt="Körsbärsblommor ramar in berget Fuji" />
+      <img className="about-photo about-photo-desktop" src={aboutImage} alt="Körsbärsblommor ramar in berget Fuji" />
     </main>
   )
 }
