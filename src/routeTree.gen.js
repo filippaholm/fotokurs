@@ -10,11 +10,19 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as AdminRouteImport } from './routes/admin'
+import { Route as BekraftelseRouteImport } from './routes/bekraftelse'
+import { Route as BokningRouteImport } from './routes/bokning'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+})
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 })
 const AdminRoute = AdminRouteImport.update({
@@ -22,9 +30,22 @@ const AdminRoute = AdminRouteImport.update({
   path: '/admin',
   getParentRoute: () => rootRouteImport,
 })
+const BekraftelseRoute = BekraftelseRouteImport.update({
+  id: '/bekraftelse',
+  path: '/bekraftelse',
+  getParentRoute: () => rootRouteImport,
+})
+const BokningRoute = BokningRouteImport.update({
+  id: '/bokning',
+  path: '/bokning',
+  getParentRoute: () => rootRouteImport,
+})
 
 const rootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   AdminRoute: AdminRoute,
+  BekraftelseRoute: BekraftelseRoute,
+  BokningRoute: BokningRoute,
 }
 export const routeTree = rootRouteImport._addFileChildren(rootRouteChildren)

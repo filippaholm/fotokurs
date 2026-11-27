@@ -14,7 +14,7 @@ npm ci
 npm run dev
 ```
 
-Öppna länken efter **Local** i terminalen. När du ser **Fotoworkshopen**, klicka på **Om workshopen** för att fälla ut texten. Låt terminalen vara öppen. Nästa gång räcker det att öppna projektmappen och köra `npm run dev`.
+Öppna länken efter **Local** i terminalen. När du ser **Ljusrum**, öppna **Workshop** för att läsa om kursen och **Boka din plats** för att välja ett datum. Välj ett datum för att granska bokningen och fortsätt till bekräftelsen. Låt terminalen vara öppen. Nästa gång räcker det att öppna projektmappen och köra `npm run dev`.
 
 ## Koppla Copilot till Figma
 
